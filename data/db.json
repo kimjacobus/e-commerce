@@ -6,14 +6,16 @@
       "comments": "hello, how are you",
       "likes": 999,
       "follow": false,
+      "type": "chaise",
       "image": "/brown-desk-chair.jpeg"
     },
     {
       "id": 2,
-      "caption": "what's up",
+      "caption": "what",
       "comments": "I like stuff too",
       "likes": 999,
       "follow": false,
+      "type": "chaise",
       "image": "/brown-outside-chair.jpeg"
     },
     {
@@ -25,23 +27,25 @@
       "image": "/bubble-chair.jpeg"
     },
     {
-      "id": 1,
+      "id": 4,
       "caption": "this is a picture of me",
       "comments": "hello, how are you",
       "likes": 999,
       "follow": false,
+      "type": "chaise",
       "image": "/brown-desk-chair.jpeg"
     },
     {
-      "id": 2,
+      "id": 5,
       "caption": "what's up",
       "comments": "I like stuff too",
       "likes": 999,
       "follow": false,
+      "type": "chaise",
       "image": "/brown-outside-chair.jpeg"
     },
     {
-      "id": 3,
+      "id": 6,
       "caption": "jijijiij",
       "comments": "great pic",
       "likes": 9,
@@ -49,23 +53,25 @@
       "image": "/bubble-chair.jpeg"
     },
     {
-      "id": 1,
+      "id": 7,
       "caption": "this is a picture of me",
       "comments": "hello, how are you",
       "likes": 999,
       "follow": false,
+      "type": "chaise",
       "image": "/brown-desk-chair.jpeg"
     },
     {
-      "id": 2,
+      "id": 8,
       "caption": "what's up",
       "comments": "I like stuff too",
       "likes": 999,
       "follow": false,
+      "type": "chaise",
       "image": "/brown-outside-chair.jpeg"
     },
     {
-      "id": 3,
+      "id": 9,
       "caption": "jijijiij",
       "comments": "great pic",
       "likes": 9,
