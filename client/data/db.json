@@ -1,0 +1,116 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "amount": 19.99,
+      "caption": "brown desk chair",
+      "likes": 999,
+      "type": "Chaise",
+      "image": "/brown-desk-chair.jpeg"
+    },
+    {
+      "id": 2,
+      "amount": 15.99,
+      "caption": "brown outside chair",
+      "likes": 999,
+      "type": "Chaise",
+      "image": "/brown-outside-chair.jpeg"
+    },
+    {
+      "id": 3,
+      "amount": 15.99,
+      "caption": "bubble chair",
+      "likes": 9,
+      "type": "Chaise",
+      "image": "/bubble-chair.jpeg"
+    },
+    {
+      "id": 4,
+      "amount": 12.99,
+      "caption": "green chair",
+      "likes": 9,
+      "type": "Chaise",
+      "image": "/green-chair.jpeg"
+    },
+    {
+      "id": 5,
+      "amount": 21.99,
+      "caption": "comfy chair",
+      "likes": 9,
+      "type": "Chaise",
+      "image": "/comfy-chair.jpeg"
+    },
+    {
+      "id": 6,
+      "amount": 115.99,
+      "caption": "basic bed",
+      "likes": 999,
+      "type": "Lit",
+      "image": "/basic-bed.jpeg"
+    },
+    {
+      "id": 7,
+      "amount": 255.99,
+      "caption": "elegant wooden bed",
+      "likes": 999,
+      "type": "Lit",
+      "image": "/elegant-wooden-bed.jpeg"
+    },
+    {
+      "id": 8,
+      "amount": 295.99,
+      "caption": "fancy bed",
+      "likes": 999,
+      "type": "Lit",
+      "image": "/fancy-bed.jpeg"
+    },
+    {
+      "id": 9,
+      "amount": 155.99,
+      "caption": "yellow bed",
+      "likes": 999,
+      "type": "Lit",
+      "image": "/yellow-bed.jpeg"
+    },
+    {
+      "id": 10,
+      "amount": 95.99,
+      "caption": "chaise long couch",
+      "likes": 999,
+      "type": "Couch",
+      "image": "/chaise-long-couch.jpeg"
+    },
+    {
+      "id": 11,
+      "amount": 120.99,
+      "caption": "beige couch",
+      "likes": 999,
+      "type": "Couch",
+      "image": "/beige-couch.jpeg"
+    },
+    {
+      "id": 12,
+      "amount": 105.99,
+      "caption": "grey couch",
+      "likes": 999,
+      "type": "Couch",
+      "image": "/grey-couch.jpeg"
+    },
+    {
+      "id": 13,
+      "amount": 121.99,
+      "caption": "red couch",
+      "likes": 999,
+      "type": "Couch",
+      "image": "/red-couch.jpeg"
+    },
+    {
+      "id": 14,
+      "amount": 95.99,
+      "caption": "wooden couch",
+      "likes": 999,
+      "type": "Couch",
+      "image": "/wooden-couch.jpeg"
+    }
+  ]
+}
