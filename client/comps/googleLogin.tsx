@@ -1,7 +1,7 @@
 import { FcGoogle } from "react-icons/fc";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { GoogleLogin } from "@react-oauth/google";
-import React from "react";
+
 
 export default function GoogleLoginPage() {
   const responseGoogle = (response: any) => {
@@ -13,7 +13,7 @@ export default function GoogleLoginPage() {
   return (
     <div>
       <GoogleOAuthProvider clientId={client}>
-        {/* <GoogleLogin
+        <GoogleLogin
           onSuccess={responseGoogle}
           onFailure={responseGoogle}
           render={({ onClick }:any) => (
@@ -22,7 +22,7 @@ export default function GoogleLoginPage() {
             </button>
             
           )}
-        /> */}
+        />
       </GoogleOAuthProvider>
     </div>
   );

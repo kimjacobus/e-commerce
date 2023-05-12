@@ -17,13 +17,15 @@
     "@react-oauth/google": "^0.10.0",
     "@stripe/react-stripe-js": "^2.1.0",
     "@stripe/stripe-js": "^1.52.1",
-    "axios": "^1.3.6",
+    "axios": "^1.4.0",
     "daisyui": "^2.51.5",
+    "facebook-login-react": "^1.0.6",
+    "framer-motion": "^10.12.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-responsive": "^9.0.2",
-    "react-router-dom": "^6.11.0"
+    "react-router-dom": "^6.11.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

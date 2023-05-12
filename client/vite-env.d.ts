@@ -1,3 +1,3 @@
 /// <reference types="vite/client" />
 
-declare module "prettier-plugin-tailwindcss";
+declare module 'prettier-plugin-tailwindcss'
