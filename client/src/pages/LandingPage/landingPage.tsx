@@ -1,6 +1,6 @@
-import Motionh1 from './motionh1'
+import Motionh1 from './comps/motionh1'
 //comps
-import Grid from '../../comps/cardTest'
+import Grid from './comps/landing-card'
 import Delivery from '../../comps/deliveryInfo'
 import Footer from '../../comps/footer'
 import NewsLetters from '../../comps/newsLetters'
