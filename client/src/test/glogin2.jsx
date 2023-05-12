@@ -6,6 +6,16 @@ export const Glogin2 = () => {
   const [user, setUser] = useState([])
   const [profile, setProfile] = useState([])
 
+  const googleCallback = 'http://localhost:8080/oauth2/callback/google'
+  const endpoint = 'https://www.googleapis.com/oauth2/v3/certs'
+  const auth = 'https://accounts.google.com/o/oauth2/auth'
+  const token = 'https://accounts.google.com/o/oauth2/token'
+  const userI = 'https://www.googleapis.com/oauth2/v3/userinfo'
+  const reg = '{baseUrl}/{action}/oauth2/code/{registrationId}'
+
+  // stash
+  //  .post(`https://www.googleapis.com/oauth2/v3/tokeninfo?access_token=${user.access_token}`)
+
   const login = useGoogleLogin({
     onSuccess: (codeResponse) => setUser(codeResponse),
     onError: (error) => console.log('Login Failed:', error),
@@ -13,21 +23,22 @@ export const Glogin2 = () => {
 
   useEffect(() => {
     if (user) {
-      axios
-        .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
-          headers: {
-            Authorization: `Bearer ${user.access_token}`,
-            Accept: 'application/json',
-          },
+
+      // axios
+      //   .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`)
+      //   .then((res) => {
+      //     console.log(res);
+      //     return res
+      //   })
+        // .then((res) => {
+
+          axios.post(`https://oauth2.googleapis.com/tokeninfo?access_token=${user.access_token}`)
+        .then((res)=> {
+          console.log(res);
+
         })
-        .then((res) => {
-          setProfile(res.data)
-          console.log(res.data)
-          axios.post('http://localhost:8080/oauth2/callback/google', { acces_token: user.access_token }).then((res) => {
-            console.log(res.data)
-          })
-        })
-        .catch((err) => console.log(err))
+
+        .catch((err) => console.log())
     }
   }, [user])
 
@@ -58,3 +69,18 @@ export const Glogin2 = () => {
     </div>
   )
 }
+
+
+        // axios
+        //   .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
+        //     headers: {
+        //       Authorization: `Bearer ${user.access_token}`,
+        //       Accept: 'application/json',
+        //     },
+        //   })
+        // .then((res) => {
+        //   setProfile(res.data)
+        //   console.log(res.data)
+        //   console.log(res.access_token);
+
+        // })
