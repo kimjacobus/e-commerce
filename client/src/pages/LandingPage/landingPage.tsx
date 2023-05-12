@@ -1,9 +1,12 @@
 import Motionh1 from './comps/motionh1'
 //comps
-import Grid from './comps/landing-card'
+import LandingGrid from './comps/landingGrid'
 import Delivery from '../../comps/deliveryInfo'
 import Footer from '../../comps/footer'
 import NewsLetters from '../../comps/newsLetters'
+import { Glogin2 } from '../../test/glogin2'
+import { GoogleAPI } from '../../test/googlelogin'
+import Login from '../../test/loginTest'
 
 export default function LandingPage() {
   return (
@@ -28,12 +31,16 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+      {/* <GoogleAPI />
+
+      <Login/> */}
+      <Glogin2/>
 
       {/** comps info delivery */}
       <Delivery />
 
       {/** TEST comps items shops expo TEST */}
-      <Grid />
+      <LandingGrid />
 
       {/** comps newsletters  */}
       <NewsLetters />

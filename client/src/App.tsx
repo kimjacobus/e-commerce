@@ -6,6 +6,7 @@ import Navbar from './comps/navbar'
 import LandingPage from './pages/LandingPage/landingPage'
 import UserCart from './pages/usercart'
 import Homepage from './pages/Homepage/homepage'
+
 // import GoogleLoginPage from './comps/googleLogin'
 // import StripeContainer from './comps/stripe/stripe-container'
 // //hooks
