@@ -8,6 +8,7 @@ import { Glogin2 } from '../../test/glogin2'
 import { GoogleAPI } from '../../test/googlelogin'
 import Login from '../../test/loginTest'
 
+
 export default function LandingPage() {
   return (
     <>
@@ -32,7 +33,6 @@ export default function LandingPage() {
         </div>
       </section>
       {/* <GoogleAPI />
-
       <Login/> */}
       <Glogin2/>
 
