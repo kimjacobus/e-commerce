@@ -40,6 +40,8 @@ export const GoogleAPI = () => {
         console.log(res.data)
         // Rediriger vers la page de paiement ou autre
         setIsLoggedIn(true)
+        console.log(isLoggedIn);
+        
         history('/payment')
       })
       .catch((error) => {

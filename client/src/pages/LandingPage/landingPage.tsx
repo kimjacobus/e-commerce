@@ -4,12 +4,43 @@ import LandingGrid from './comps/landingGrid'
 import Delivery from '../../comps/deliveryInfo'
 import Footer from '../../comps/footer'
 import NewsLetters from '../../comps/newsLetters'
-import { Glogin2 } from '../../test/glogin2'
-import { GoogleAPI } from '../../test/googlelogin'
-import Login from '../../test/loginTest'
+// import { Glogin2 } from '../../test/glogin2'
+// import { GoogleAPI } from '../../test/googlelogin'
+// import Login from '../../test/loginTest'
 
+import { useEffect, useState } from 'react'
 
 export default function LandingPage() {
+  const [cart, setCart] = useState<any>([])
+
+  useEffect(() => {
+    cartFetch()
+  }, [])
+
+  const cartFetch = async () => {
+    console.log('launched cartfetch')
+
+    fetch('http://localhost:8080/cart/', {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.error) {
+          console.log(data.error)
+        } else {
+          console.log('cartfetch ran')
+
+          setCart(data)
+          console.log(data)
+          console.log('cart' + cart)
+        }
+      })
+  }
+
   return (
     <>
       <section>
@@ -34,7 +65,7 @@ export default function LandingPage() {
       </section>
       {/* <GoogleAPI />
       <Login/> */}
-      <Glogin2/>
+      {/* <Glogin2/> */}
 
       {/** comps info delivery */}
       <Delivery />

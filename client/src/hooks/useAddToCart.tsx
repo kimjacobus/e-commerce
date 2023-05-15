@@ -29,12 +29,12 @@ export default function useAddToCart() {
     }
   }, [cartItems])
 
-  const BuyUserCart = (body: { id: string; amount: number }) => {
+  // const BuyUserCart = (body: { id: string; amount: number }) => {
     // grab&prepare body for fetch request
     // const body = {
     // id : cartItems.reduce((acc, item) => acc + item.amount, 0)),
     // amount: (cartItems.map((item) => item.id))}
-  }
+  // }
 
-  return { AddToUserCart, BuyUserCart }
+  return { AddToUserCart}
 }

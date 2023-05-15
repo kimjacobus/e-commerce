@@ -15,7 +15,7 @@ const UserCart = () => {
 
   useEffect(() => {
     setFilterType('usercart')
-    // fetchData()
+    fetchData()
     // addItem()
     cartFetch()
   }, [])

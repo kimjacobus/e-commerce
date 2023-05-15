@@ -15,19 +15,19 @@ export default function LandingGrid() {
   }, [])
 
   return (
-    <div className="grid grid-cols-3 grid-rows-3 bg-orange-100 p-4 gap-2">
+    <div className="grid grid-cols-3 grid-rows-3 bg-orange-100 lg:px-44 lg:pb-4 pb-4 px-4 gap-2">
       <div className="card col-span-2 lg:h-96 h-28 outline outline-1">
         <div className="bg-cover bg-center h-full" style={{ backgroundImage: `url('/assets/test.jpg')` }}></div>
       </div>
 
       {slicedData &&
         slicedData.map((item: dataProps) => (
-          <div className="w-auto lg:h-96 h-28 outline outline-1 overflow-hidden">
-            <div className="absolute  w-full h-96 bg-gray-500 opacity-0 transition-opacity hover:opacity-100"></div>
-            <div className="bg-cover bg-center h-full" style={{ backgroundImage: `url(${item.imageURL})` }}>
-            </div>
-           
+          <div className="w-auto lg:h-96 h-28 outline outline-1">
+          <div className="bg-cover bg-center w-full h-full relative">
+            <img className="w-full h-full object-cover" src={item.imageURL} alt='img' />
           </div>
+        </div>
+        
           
         ))}
 
