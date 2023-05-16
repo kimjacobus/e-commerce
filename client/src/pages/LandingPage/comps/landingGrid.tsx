@@ -3,12 +3,24 @@ import { endpoint } from '../../../api/endpoint'
 import { useFetch } from '../../../hooks/useFetch'
 //types
 import { fetchProps, dataProps } from '../../../types/fetch-props'
-import { useEffect } from 'react'
+import { useEffect} from 'react'
 
 export default function LandingGrid() {
   const { fetchData, data }: fetchProps = useFetch(endpoint)
+  
+  // const [slicedData, setSlicedData] = useState<any>()
 
+    // setInterval(() => {
+    //   console.log('hello 5 seconds');
+    //   setSlicedData(data.slice(0, Math.floor(Math.random() * )))
+
+    // },5000)
+  
   const slicedData = data.slice(0, 5)
+
+
+
+
 
   useEffect(() => {
     fetchData()

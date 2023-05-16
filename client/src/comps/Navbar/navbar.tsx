@@ -2,13 +2,12 @@
 import ShoppingCart from '/icons/shopping-cart.svg'
 import User from '/icons/user.svg'
 import Heart from '/icons/heart.svg'
-
 //react
 import MediaQuery from 'react-responsive'
 import { Link } from 'react-router-dom'
 import { useState, Dispatch, SetStateAction } from 'react'
 //comps
-import FilterButtons from '../pages/Homepage/homepage-comps/filterbuttons'
+import FilterButtons from './filterbuttons'
 //types
 type navbarProps = {
   setQuery: Dispatch<SetStateAction<string>>
@@ -35,13 +34,13 @@ export default function Navbar({ setQuery, setFilterType }: navbarProps) {
           <FilterButtons setQuery={setQuery} setFilterType={setFilterType} />
 
           <div className="user-buttons flex justify-around w-52 pt-7">
-            <Link to="/">
+            <Link to="/dashboard">
               <img src={ShoppingCart} className="w-8 cursor-pointer" alt="shopping-cart-icon.svg" />
             </Link>
-            <Link to="/Liked">
+            <Link to="/dashboard">
               <img src={Heart} className="w-8 cursor-pointer" alt="heart-icon.svg" />
             </Link>
-            <Link to="/Dashboard">
+            <Link to="/dashboard">
               <img src={User} className="w-8 cursor-pointer" alt="user-icon.svg" />
             </Link>
           </div>

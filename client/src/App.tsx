@@ -2,9 +2,9 @@ import { endpoint } from './api/endpoint'
 //react
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //components
-import Navbar from './comps/navbar'
+import Navbar from './comps/Navbar/navbar'
 import LandingPage from './pages/LandingPage/landingPage'
-import UserCart from './pages/usercart'
+import Dashboard from './pages/Dashboard/dashboard'
 import Homepage from './pages/Homepage/homepage'
 
 // import GoogleLoginPage from './comps/googleLogin'
@@ -34,11 +34,10 @@ function App() {
             />
           }
         />
-        <Route path="/cart" element={<UserCart />} />
+        <Route path="/dashboard/*" element={<Dashboard />} />
         {/* <Route path="/checkout" element={<StripeContainer />} /> */}
         {/* <Route path="/test" element={<GoogleLoginPage />} /> */}
         {/* <Route path="/lol" element={<Login  />} /> */}
-        
       </Routes>
     </BrowserRouter>
   )

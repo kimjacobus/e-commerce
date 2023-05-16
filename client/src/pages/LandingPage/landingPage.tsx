@@ -4,42 +4,35 @@ import LandingGrid from './comps/landingGrid'
 import Delivery from '../../comps/deliveryInfo'
 import Footer from '../../comps/footer'
 import NewsLetters from '../../comps/newsLetters'
-// import { Glogin2 } from '../../test/glogin2'
-// import { GoogleAPI } from '../../test/googlelogin'
-// import Login from '../../test/loginTest'
 
-import { useEffect, useState } from 'react'
+// import { useEffect, useState } from 'react'
 
 export default function LandingPage() {
-  const [cart, setCart] = useState<any>([])
+  // const [cart, setCart] = useState<any>([])
 
-  useEffect(() => {
-    cartFetch()
-  }, [])
+  // useEffect(() => {
+  //   cartFetch()
+  // }, [])
 
-  const cartFetch = async () => {
-    console.log('launched cartfetch')
+  // const cartFetch = async () => {
+  //   console.log('launched cartfetch')
 
-    fetch('http://localhost:8080/cart/', {
-      method: 'GET',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.error) {
-          console.log(data.error)
-        } else {
-          console.log('cartfetch ran')
+  //   fetch('http://localhost:8080/cart/?token=e70a3b32-9703-4996-8c3b-1a5f3341253a', {
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       if (data.error) {
+  //         console.log(data);
+  //         console.log(data.error)
+  //       } else {
+  //         console.log('cartfetch ran')
 
-          setCart(data)
-          console.log(data)
-          console.log('cart' + cart)
-        }
-      })
-  }
+  //         setCart(data)
+  //         console.log(data)
+  //         console.log('cart' + cart)
+  //       }
+  //     })
+  // }
 
   return (
     <>
@@ -63,10 +56,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      {/* <GoogleAPI />
-      <Login/> */}
-      {/* <Glogin2/> */}
-
       {/** comps info delivery */}
       <Delivery />
 
