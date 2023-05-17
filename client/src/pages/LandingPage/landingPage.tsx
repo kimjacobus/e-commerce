@@ -1,11 +1,39 @@
 import Motionh1 from './comps/motionh1'
 //comps
-import Grid from './comps/landing-card'
+import LandingGrid from './comps/landingGrid'
 import Delivery from '../../comps/deliveryInfo'
 import Footer from '../../comps/footer'
 import NewsLetters from '../../comps/newsLetters'
 
+// import { useEffect, useState } from 'react'
+
 export default function LandingPage() {
+  // const [cart, setCart] = useState<any>([])
+
+  // useEffect(() => {
+  //   cartFetch()
+  // }, [])
+
+  // const cartFetch = async () => {
+  //   console.log('launched cartfetch')
+
+  //   fetch('http://localhost:8080/cart/?token=e70a3b32-9703-4996-8c3b-1a5f3341253a', {
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       if (data.error) {
+  //         console.log(data);
+  //         console.log(data.error)
+  //       } else {
+  //         console.log('cartfetch ran')
+
+  //         setCart(data)
+  //         console.log(data)
+  //         console.log('cart' + cart)
+  //       }
+  //     })
+  // }
+
   return (
     <>
       <section>
@@ -28,12 +56,11 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/** comps info delivery */}
       <Delivery />
 
       {/** TEST comps items shops expo TEST */}
-      <Grid />
+      <LandingGrid />
 
       {/** comps newsletters  */}
       <NewsLetters />

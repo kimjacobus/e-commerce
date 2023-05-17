@@ -7,7 +7,7 @@ export default function Delivery() {
   return (
     <>
       <section>
-        <div className="grid grid-cols-1 p-1 pt-7 bg-orange-100 md:p-4 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10">
+        <div className="grid grid-cols-1 p-1 pt-7 bg-orange-100 md:p-4 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10 lg:px-44">
           <div className="outline outline-1 px-4 py-2 rounded-lg flex items-center">
             <LocalShippingIcon />
             <div className=" pl-2 md:pl-4 md:p-4 text-sm font-quicksand">
