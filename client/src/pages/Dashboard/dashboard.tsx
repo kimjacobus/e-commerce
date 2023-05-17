@@ -13,7 +13,6 @@ import { DashSidebar } from './dash-sidebar'
 
 const Dashboard = () => {
   // const { fetchData, filteredData: data, setFilterType } = useFetch(endpoint)
-  // const { ToolTip, handleMouseOver, handleMouseOut } = UseToolTip()
   const [pageSelector, setPageSelector] = useState<number>(0)
   const { Profile, Basket, Wishlist } = DashboardPages()
 
