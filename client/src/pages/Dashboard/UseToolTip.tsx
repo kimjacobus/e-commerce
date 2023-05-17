@@ -26,7 +26,10 @@ const UseToolTip = () => {
     console.log(text)
 
     return showTooltip ? (
-      <div className="tooltip" style={{ left: tooltipPosition.x, top: tooltipPosition.y }}>
+      <div
+        className="tooltip flex justify-center items-center bg-gray-100 rounded-full w-32 h-32"
+        style={{ left: tooltipPosition.x, top: tooltipPosition.y }}
+      >
         <h2>{text}</h2>
       </div>
     ) : (
